@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { typeOrmConfig } from './configs/typeorm.config';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  getHello(): any {
+    return typeOrmConfig;
   }
 }
