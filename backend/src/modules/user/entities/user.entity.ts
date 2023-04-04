@@ -1,5 +1,6 @@
-import { BeforeInsert, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { BeforeInsert, Column, CreateDateColumn, Entity, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 import * as bcrypt from 'bcrypt'
+import { Blog } from "src/modules/blog/entities/blog.entity";
 
 
 @Entity({name: 'users'})
@@ -33,5 +34,8 @@ export class User {
         const salt = await bcrypt.genSalt();
         this.password = await bcrypt.hash(password || this.password, salt);
     }
+
+    // @OneToMany(() => Blog, (blog) => blog.user)
+    // blog: Blog;
 
 }

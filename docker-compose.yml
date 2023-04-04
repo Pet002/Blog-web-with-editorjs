@@ -17,6 +17,8 @@ services:
     depends_on:
       - db
     image: dpage/pgadmin4
+    volumes:
+      - pg_admin:/var/lib/pgadmin
     ports:
     - 8000:80
     environment:
@@ -49,4 +51,5 @@ networks:
 
 volumes:
   db_data:
+  pg_admin:
 
