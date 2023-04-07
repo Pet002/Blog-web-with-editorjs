@@ -4,7 +4,8 @@ const nextConfig = {
   swcMinify: true,
   sassOptions: {
     includePath:['./styles'],
-  }
+  },
+  output:'standalone'
 }
 
 module.exports = nextConfig
