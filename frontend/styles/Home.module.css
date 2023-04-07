@@ -2,6 +2,11 @@
   padding: 0 2rem;
 }
 
+.headerBg{
+  background: linear-gradient(1.96deg, #D8CDB1 3.17%, #E8E9EE 98.43%);
+}
+
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
