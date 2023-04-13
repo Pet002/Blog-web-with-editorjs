@@ -6,4 +6,4 @@ This Project is a build a blog website with editorjs and nestjs
 - use command `docker-compose -f docker-compose.development.yml up -d` 
 
 - run a backend by command `cd backend ` and run nestjs with command `npm run start:dev`
-- run frontend by command `cd frontend ` and run nestjs with command `npm run dev`
+- run frontend by command `cd frontend ` and run nextjs with command `npm run dev`
